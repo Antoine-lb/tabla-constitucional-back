@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "capitulos",
+  "info": {
+    "singularName": "capitulo",
+    "pluralName": "capitulos",
+    "displayName": "Capítulo"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nombre": {
+      "type": "string",
+      "required": true
+    },
+    "numero_del_capitulo": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}
