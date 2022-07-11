@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sub_capitulos",
+  "info": {
+    "singularName": "sub-capitulo",
+    "pluralName": "sub-capitulos",
+    "displayName": "Sub Capítulo"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nombre": {
+      "type": "string",
+      "required": true
+    },
+    "Prioridad": {
+      "type": "integer",
+      "required": false
+    },
+    "hex_color": {
+      "type": "string",
+      "default": "B7B4B0"
+    },
+    "capitulo": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::capitulo.capitulo",
+      "inversedBy": "sub_capitulos"
+    }
+  }
+}

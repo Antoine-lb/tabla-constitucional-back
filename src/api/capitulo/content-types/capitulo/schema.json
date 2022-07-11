@@ -18,6 +18,12 @@
     "numero_del_capitulo": {
       "type": "integer",
       "required": true
+    },
+    "sub_capitulos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::sub-capitulo.sub-capitulo",
+      "mappedBy": "capitulo"
     }
   }
 }
