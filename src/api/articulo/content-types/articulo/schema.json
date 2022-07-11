@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "articulos",
+  "info": {
+    "singularName": "articulo",
+    "pluralName": "articulos",
+    "displayName": "Artículo",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre_corto": {
+      "type": "string",
+      "required": true
+    },
+    "contenido": {
+      "type": "richtext",
+      "required": true
+    },
+    "numero_de_articulo": {
+      "type": "integer",
+      "required": true
+    },
+    "numero_de_incisos": {
+      "type": "integer",
+      "required": true
+    },
+    "pagina": {
+      "type": "integer",
+      "required": true
+    },
+    "simbolo": {
+      "type": "string",
+      "required": true
+    },
+    "sub_capitulo": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::sub-capitulo.sub-capitulo",
+      "inversedBy": "articulos"
+    }
+  }
+}

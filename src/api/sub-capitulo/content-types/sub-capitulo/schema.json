@@ -28,6 +28,12 @@
       "relation": "manyToOne",
       "target": "api::capitulo.capitulo",
       "inversedBy": "sub_capitulos"
+    },
+    "articulos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::articulo.articulo",
+      "mappedBy": "sub_capitulo"
     }
   }
 }
