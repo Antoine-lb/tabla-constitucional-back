@@ -41,6 +41,12 @@
       "relation": "manyToOne",
       "target": "api::sub-capitulo.sub-capitulo",
       "inversedBy": "articulos"
+    },
+    "link_reddit": {
+      "type": "string"
+    },
+    "link_instagram": {
+      "type": "string"
     }
   }
 }
